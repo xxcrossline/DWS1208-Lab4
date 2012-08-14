@@ -1,0 +1,209 @@
+/* Color Code
+Cyan- #31F1FE
+Black- #000
+White- #FFF
+Dark Cyan- #00242D
+Sky-Blue- #2DEDFA
+*/
+
+@font-face {
+    font-family: Orbitron, sans-serif;
+    font-family: "Anonymous Pro", sans-serif;
+}
+
+body, html {
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;	
+}
+
+#wrap {
+	width: 960px;
+	line-height: 20px;
+	background-image: url(../images/assault.png);
+}
+
+.gradient {
+	 /* css3 gradient */
+  background-color: #31F1FE;
+  background-image: url(../images/radial_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #31F1FE, #000);
+  
+  /* Firefox 3.6+ */ 
+  background: -moz-radial-gradient(circle, #31F1FE, #000);
+  
+  /* IE 10 */ 
+  background: -ms-radial-gradient(circle, #31F1FE, #000);
+    /* End css3 gradient */
+  
+}
+
+header {    
+    float: left;
+    width: 600px
+}
+/*				 Begin Nav   			 */
+nav li {
+    
+    float: right;
+    width: 400px;
+    padding: 5px;
+    margin-top: -5px;
+}
+
+nav a {
+    display: block;
+    width: 400px;
+    height: 100px;
+    text-decoration: none;
+    text-align: center;
+    padding: 3px;
+    background: url(../images/nav_03.jpg) no-repeat;
+	/* text-indent: -9000px; Nav Won't show */
+}
+
+nav a:hover {
+    background: #FFF;
+}
+
+#products a:hover {
+	background-position: 0 -100px;
+}
+
+#products a:active {
+	background-position: 0 -200px;
+}
+
+#shop a{
+	background-position: -100px 0; 
+}
+
+#shop a:hover {
+	background-position: -100px -100px;
+}
+
+#shop a:active {
+	background-position: -100px -200px;
+}
+
+#support a{
+	background-position: -200px 0; 
+}
+
+#support a:hover {
+	background-position: -200px -100px;
+}
+
+#support a:active {
+	background-position: -200px -200px;
+}
+
+/* End Nav */
+
+
+h1, h2  {
+   font-family: Orbitron; 
+   font-size: 24px;
+   color: #2DEDFA;
+   margin: 0;
+   padding: 10px;
+   text-shadow: 0.2em 0.1em 0.3em #31F1FE;
+}
+
+p, dl, li{
+    font-family: "Anonymous Pro";
+    clear: both;
+    color: #FFF;
+    padding: 5px;
+    margin: 0;
+}
+
+footer {
+    color: #FFF;
+    text-align: center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* Making Columns */
+
+#cta {
+    float: left;
+    width: 600px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+#nai{
+    float: right;
+    width: 320px;
+}
+
+#gallery, aside{
+	clear: both;
+}
+/* End Columns */
+
+#light li  {
+	margin: 7px;
+	list-style-type: none;
+	float: left;
+	
+}
+
+#light li a{
+	width: 150px;
+	height: 37px;
+	border-style: dashed;
+    border-color: #00242D; 
+    display: block;  
+}
+
+#light li a:hover {
+	border-color: #FFF;
+	width: 150px;
+	height: 37px;
+}
+
+/*          Call to action button                                */                                                           
+.button {
+    background: #31F1FE;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#31F1FE), color-stop(100%,#000));
+    background: -moz-linear-gradient(center top, #000 0%, #31F1FE 100%);
+    			-webkit-border-radius: 2px;
+    			-moz-border-radius: 2px;
+    border-radius: 2px;
+    text-shadow: 0px 1px 0px #31F1FE;
+    padding: 0px 12px;
+    border: solid 1px #31F1FE;
+    text-align: center;
+    text-decoration: none;
+    font-family: Orbitron;
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: 100;
+    font-style: normal;
+    float: right;
+    
+}
+.button:hover {
+ -webkit-box-shadow: 0px 0px 1px #000;
+    -moz-box-shadow: 0px 0px 1px #000;
+    	 box-shadow: 0px 0px 1px #000;
+       border-color: #FFF;
+}
+.button:active {
+    -webkit-box-shadow: 0px 2px 3px 0px #000 inset;
+       -moz-box-shadow: 0px 2px 3px 0px #000 inset;
+   	        box-shadow: 0px 2px 3px 0px #000 inset;
+   		   text-shadow: -1px -1px 0px #31F1FE;
+    	  border-color: #00242D;
+}
+/*        End call to action     */
